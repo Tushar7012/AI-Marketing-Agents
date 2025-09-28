@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+psycopg2-binary 
+sentence-transformers
+chromadb-client 
+redis 
+python-jose[cryptography] 
+passlib[bcrypt] 
+pytest
+pytest-cov
+httpx 
