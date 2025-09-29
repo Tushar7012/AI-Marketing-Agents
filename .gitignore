@@ -6,3 +6,4 @@ __pycache__/
 node_modules/
 .next/
 out/
+ai_marketing_agents.egg-info

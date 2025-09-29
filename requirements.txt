@@ -1,13 +1,36 @@
+# File: requirements.txt
+
+# --- Core Web Framework ---
 fastapi
 uvicorn[standard]
 pydantic
 pydantic-settings
-psycopg2-binary 
+
+# --- Database & ORM ---
+sqlalchemy
+psycopg2-binary
+
+# --- Asynchronous Tasks & Caching ---
+celery
+redis
+
+# --- AI & Machine Learning ---
+groq
+ollama
+# Explicitly install CPU-only PyTorch BEFORE sentence-transformers to prevent build crashes
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+torchaudio --index-url https://download.pytorch.org/whl/cpu
 sentence-transformers
-chromadb-client 
-redis 
-python-jose[cryptography] 
-passlib[bcrypt] 
+chromadb-client
+
+# --- Authentication & Security ---
+python-jose[cryptography]
+passlib[bcrypt]
+
+# --- Testing & Code Quality ---
 pytest
 pytest-cov
-httpx 
+httpx
+flake8
+black
